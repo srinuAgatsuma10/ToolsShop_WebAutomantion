@@ -12,7 +12,7 @@ public class SignInPage_POM extends BasePage {
 	
 	// WebElements
 	// Click Register Account
-	@FindBy(xpath="/a[normalize-space()='Register your account']")
+	@FindBy(xpath="//a[normalize-space()='Register your account']")
 	WebElement registerAccount;
 	
 	
