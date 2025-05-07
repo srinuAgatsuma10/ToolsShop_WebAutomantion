@@ -13,7 +13,7 @@ public class HomePagePOM extends BasePage {
 	// WebElements
 	
 	// Click on Sign In
-	@FindBy(xpath="")
+	@FindBy(xpath="//a[normalize-space()='Sign in']")
 	WebElement signIn;
 	
 	

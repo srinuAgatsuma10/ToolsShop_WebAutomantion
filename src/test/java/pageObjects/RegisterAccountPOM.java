@@ -13,39 +13,41 @@ public class RegisterAccountPOM extends BasePage {
 	
 	// WebElements
 	// Form Elements
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='first_name']")
 	WebElement firstName;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='last_name']")
 	WebElement lastName;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='dob']")
 	WebElement dateOfBirth;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='street']")
 	WebElement Street;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='postal_code']")
 	WebElement pinCode;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='city']")
 	WebElement City;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='state']")
 	WebElement State;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//select[@id='country']")
 	WebElement Country;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='phone']")
 	WebElement Phone;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='email']")
 	WebElement Email;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//input[@id='password']")
 	WebElement Password;
 	
+	@FindBy(xpath="//button[normalize-space()='Register']")
+	WebElement registerButton;
 	
 	
 	// Action Methods
@@ -54,8 +56,8 @@ public class RegisterAccountPOM extends BasePage {
 		lastName.sendKeys(lname);
 	}
 	
-	public void enterDOB() {
-		
+	public void enterDOB(String dob) {
+		dateOfBirth.sendKeys(dob);
 	}
 	
 	public void enterAddressDetails(String street, String pin, String city, String state) {
@@ -77,5 +79,9 @@ public class RegisterAccountPOM extends BasePage {
 	
 	public void enterPassword(String password) {
 		Password.sendKeys(password);
+	}
+	
+	public void clickRegisterButton() {
+		registerButton.click();
 	}
 }
