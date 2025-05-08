@@ -26,11 +26,25 @@ public class HomePagePOM extends BasePage {
 	@FindBy(xpath = "//a[@title='Practice Software Testing - Toolshop']")
 	WebElement logo;
 
+	// Click User Account Menu
 	@FindBy(xpath = "//a[@id='menu']")
 	WebElement userAccountMenu;
 
+	// Click SiginOut
 	@FindBy(xpath = "//a[normalize-space()='Sign out']")
 	WebElement signOut;
+
+	// Search box
+	@FindBy(xpath = "//input[@id='search-query']")
+	WebElement searchBox;
+
+	// Search box search button
+	@FindBy(xpath = "//button[normalize-space()='Search']")
+	WebElement searchButton;
+
+	// Search Clear button
+	@FindBy(xpath = "//button[normalize-space()='X']")
+	WebElement searchClear;
 
 	// Action Methods
 	public void clikcSignIn() {
@@ -48,5 +62,17 @@ public class HomePagePOM extends BasePage {
 
 	public void clickSignOut() {
 		signOut.click();
+	}
+
+	public void enterProductName(String proName) {
+		searchBox.sendKeys(proName);
+	}
+
+	public void clickSearchButton() {
+		searchButton.click();
+	}
+
+	public void clearSearchButton() {
+		searchClear.click();
 	}
 }

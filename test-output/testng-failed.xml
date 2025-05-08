@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_03_SignOutFromaApplication">
+      <class name="testCases.TC_04_SearchFunctinality">
         <methods>
-          <include name="SignIn"/>
           <include name="tearDown"/>
+          <include name="searchProduct"/>
           <include name="setUp"/>
-          <include name="signOutFromApplication"/>
         </methods>
-      </class> <!-- testCases.TC_03_SignOutFromaApplication -->
+      </class> <!-- testCases.TC_04_SearchFunctinality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
