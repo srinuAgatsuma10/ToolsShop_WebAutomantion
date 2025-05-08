@@ -1,4 +1,4 @@
-package testBase;
+package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -8,6 +8,7 @@ import com.github.javafaker.Faker;
 import pageObjects.HomePagePOM;
 import pageObjects.RegisterAccountPOM;
 import pageObjects.SignInPage_POM;
+import testBase.BaseClass;
 
 public class TC_01_RegisterAccount extends BaseClass {
 
