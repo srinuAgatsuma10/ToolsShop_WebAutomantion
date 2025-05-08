@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-07T19:38:30 IST" name="Default suite" finished-at="2025-05-07T19:38:50 IST" duration-ms="19224">
+  <suite started-at="2025-05-08T18:59:45 IST" name="Default suite" finished-at="2025-05-08T19:00:18 IST" duration-ms="32785">
     <groups>
     </groups>
-    <test started-at="2025-05-07T19:38:30 IST" name="Default test" finished-at="2025-05-07T19:38:50 IST" duration-ms="19224">
-      <class name="testBase.TC_01_RegisterAccount">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testBase.TC_01_RegisterAccount@6025e1b6]" started-at="2025-05-07T19:38:30 IST" name="setUp" finished-at="2025-05-07T19:38:41 IST" duration-ms="10548" status="PASS">
+    <test started-at="2025-05-08T18:59:45 IST" name="Default test" finished-at="2025-05-08T19:00:18 IST" duration-ms="32785">
+      <class name="testBase.TC_02_SignInToApplication">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testBase.TC_02_SignInToApplication@40a4337a]" started-at="2025-05-08T18:59:45 IST" name="setUp" finished-at="2025-05-08T19:00:08 IST" duration-ms="23348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="createNewAccount()[pri:0, instance:testBase.TC_01_RegisterAccount@6025e1b6]" started-at="2025-05-07T19:38:41 IST" name="createNewAccount" finished-at="2025-05-07T19:38:49 IST" duration-ms="8098" status="PASS">
+        <test-method signature="signIntoApplication()[pri:0, instance:testBase.TC_02_SignInToApplication@40a4337a]" started-at="2025-05-08T19:00:08 IST" name="signIntoApplication" finished-at="2025-05-08T19:00:17 IST" duration-ms="8859" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testBase.TC_01_RegisterAccount@6025e1b6]" started-at="2025-05-07T19:38:49 IST" name="tearDown" finished-at="2025-05-07T19:38:50 IST" duration-ms="506" status="PASS">
+        </test-method> <!-- signIntoApplication -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testBase.TC_02_SignInToApplication@40a4337a]" started-at="2025-05-08T19:00:17 IST" name="tearDown" finished-at="2025-05-08T19:00:18 IST" duration-ms="513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testBase.TC_01_RegisterAccount -->
+      </class> <!-- testBase.TC_02_SignInToApplication -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
