@@ -1,6 +1,7 @@
 package pageObjects;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,6 +47,8 @@ public class HomePagePOM extends BasePage {
 	@FindBy(xpath = "//button[normalize-space()='X']")
 	WebElement searchClear;
 
+	
+	
 	// Action Methods
 	public void clikcSignIn() {
 		signIn.click();
