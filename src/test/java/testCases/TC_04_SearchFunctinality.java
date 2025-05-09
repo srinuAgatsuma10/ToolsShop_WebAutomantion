@@ -12,13 +12,13 @@ public class TC_04_SearchFunctinality extends BaseClass {
 	@Test
 	public void searchProduct() {
 		HomePagePOM hp = new HomePagePOM(driver);
-		hp.enterProductName("Hammer");
+		hp.enterProductName("Pliers");
 		hp.clearSearchButton();
 		
 		SearchResultsPage_POM srp = new SearchResultsPage_POM(driver);
 		String proName = srp.getProductNames();
 		
-		Assert.assertTrue(proName.contains("Hammer"));
+		Assert.assertTrue(proName.contains("Pliers"));
 	}
 	
 }
