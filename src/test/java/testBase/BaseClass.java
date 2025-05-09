@@ -26,7 +26,7 @@ public class BaseClass {
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://practicesoftwaretesting.com/");
+		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
 	}
 

@@ -38,6 +38,6 @@ public class TC_01_RegisterAccount extends BaseClass {
 		rap.enterPassword(passwordGenerator());
 		rap.clickRegisterButton();
 
-		Assert.assertEquals(driver.getCurrentUrl(), "https://practicesoftwaretesting.com/auth/login");
+		Assert.assertEquals(driver.getCurrentUrl(), prop.getProperty("url") + "auth/login");
 	}
 }

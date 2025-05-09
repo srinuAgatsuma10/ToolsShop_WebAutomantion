@@ -15,8 +15,8 @@ public class TC_03_SignOutFromaApplication extends BaseClass {
 		hp.clikcSignIn();
 
 		SignInPage_POM sp = new SignInPage_POM(driver);
-		sp.enterEmailID("alexanderflaming@gmail.com");
-		sp.enterPasswrd("Alexander@035");
+		sp.enterEmailID(prop.getProperty("userName"));
+		sp.enterPasswrd(prop.getProperty("password"));
 		sp.clickLogin();
 
 		hp.clickLogo();
