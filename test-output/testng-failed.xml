@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.TC_05_FilteringProducts">
         <methods>
-          <include name="searchByCategory"/>
+          <include name="searchByBrand"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

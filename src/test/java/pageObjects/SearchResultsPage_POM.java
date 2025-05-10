@@ -23,7 +23,13 @@ public class SearchResultsPage_POM extends BasePage {
 	// Product results
 	@FindBy(xpath = "//a//div")
 	List<WebElement> products;
+	
+	// Brands
+	@FindBy(xpath = "//fieldset//div[@class=\"checkbox\"]//label//input[@name=\"brand_id\"]")
+	List<WebElement> brands;
 
+	
+	
 	public String getProductNames() {
 		for (WebElement pn : productNames) {
 			String proName = pn.getText();
@@ -45,4 +51,7 @@ public class SearchResultsPage_POM extends BasePage {
 		return false;
 	}
 
+	public List<WebElement> returnEachBrand() {
+		return brands;
+	}
 }

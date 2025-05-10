@@ -27,8 +27,21 @@ public class TC_05_FilteringProducts extends BaseClass {
 		}
 	}
 
-	// @Test(priority = 2)
-	public void searchByBrand() {
+	@Test(priority = 2)
+	public void searchByBrand() throws Exception {
+		SearchResultsPage_POM spm = new SearchResultsPage_POM(driver);
+		Boolean resultStatus = spm.checkEachCategoryProducts();
+		List<WebElement> brands = spm.returnEachBrand();
+		for (WebElement cp : brands) {
+			cp.click();
+			Thread.sleep(3000);
+			if (resultStatus == true) {
+				System.out.println(spm.getProductNames());
+			} else {
+				System.out.println("No Products Found");
+			}
+			cp.click();
+		}
 	}
 
 }
