@@ -47,6 +47,11 @@ public class HomePagePOM extends BasePage {
 	@FindBy(xpath = "//button[normalize-space()='X']")
 	WebElement searchClear;
 
+	// Click starting product
+	@FindBy(xpath = "//img[@alt='Combination Pliers']")
+	WebElement product1;
+
+	
 	
 	
 	// Action Methods
@@ -77,5 +82,9 @@ public class HomePagePOM extends BasePage {
 
 	public void clearSearchButton() {
 		searchClear.click();
+	}
+
+	public void selectOneProduct() {
+		product1.click();
 	}
 }

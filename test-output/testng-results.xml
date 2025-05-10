@@ -1,92 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-10T21:04:27 IST" name="Default suite" finished-at="2025-05-10T21:05:04 IST" duration-ms="37119">
+  <suite started-at="2025-05-10T22:09:20 IST" name="Default suite" finished-at="2025-05-10T22:09:34 IST" duration-ms="13743">
     <groups>
     </groups>
-    <test started-at="2025-05-10T21:04:27 IST" name="Default test" finished-at="2025-05-10T21:05:04 IST" duration-ms="37119">
-      <class name="testCases.TC_05_FilteringProducts">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_05_FilteringProducts@5b12b668]" started-at="2025-05-10T21:04:27 IST" name="setUp" finished-at="2025-05-10T21:04:50 IST" duration-ms="23205" status="PASS">
+    <test started-at="2025-05-10T22:09:20 IST" name="Default test" finished-at="2025-05-10T22:09:34 IST" duration-ms="13743">
+      <class name="testCases.TC_06_AddToFavourites">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_06_AddToFavourites@477b4cdf]" started-at="2025-05-10T22:09:20 IST" name="setUp" finished-at="2025-05-10T22:09:28 IST" duration-ms="7431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchByBrand()[pri:2, instance:testCases.TC_05_FilteringProducts@5b12b668]" started-at="2025-05-10T21:04:50 IST" name="searchByBrand" finished-at="2025-05-10T21:05:03 IST" duration-ms="13258" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
-  (Session info: chrome=136.0.7103.93)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6de771a7df9c2e3285c4eac518b14c48, getElementText {id=f.B75BD5593952D19B4AEEC86D9E752EE8.d.98462C64A5F05F24216A4DA0F83A0501.e.171}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56532/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6de771a7df9c2e3285c4eac518b14c48)] -> xpath: //a//div//h5]
-Session ID: 6de771a7df9c2e3285c4eac518b14c48]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=136.0.7103.93)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6de771a7df9c2e3285c4eac518b14c48, getElementText {id=f.B75BD5593952D19B4AEEC86D9E752EE8.d.98462C64A5F05F24216A4DA0F83A0501.e.171}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56532/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6de771a7df9c2e3285c4eac518b14c48)] -> xpath: //a//div//h5]
-Session ID: 6de771a7df9c2e3285c4eac518b14c48
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-at pageObjects.SearchResultsPage_POM.getProductNames(SearchResultsPage_POM.java:35)
-at testCases.TC_05_FilteringProducts.searchByBrand(TC_05_FilteringProducts.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method is-config="true" signature="logIn()[pri:0, instance:testCases.TC_06_AddToFavourites@477b4cdf]" started-at="2025-05-10T22:09:28 IST" name="logIn" finished-at="2025-05-10T22:09:29 IST" duration-ms="1400" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchByBrand -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_05_FilteringProducts@5b12b668]" started-at="2025-05-10T21:05:03 IST" name="tearDown" finished-at="2025-05-10T21:05:04 IST" duration-ms="573" status="PASS">
+        </test-method> <!-- logIn -->
+        <test-method signature="addToFavourites()[pri:0, instance:testCases.TC_06_AddToFavourites@477b4cdf]" started-at="2025-05-10T22:09:29 IST" name="addToFavourites" finished-at="2025-05-10T22:09:33 IST" duration-ms="4220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToFavourites -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_06_AddToFavourites@477b4cdf]" started-at="2025-05-10T22:09:33 IST" name="tearDown" finished-at="2025-05-10T22:09:34 IST" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_05_FilteringProducts -->
+      </class> <!-- testCases.TC_06_AddToFavourites -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
