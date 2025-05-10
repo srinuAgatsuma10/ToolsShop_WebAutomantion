@@ -19,7 +19,7 @@ public class SearchResultsPage_POM extends BasePage {
 	// Search By Category
 	@FindBy(xpath = "//ul//fieldset//div//label")
 	List<WebElement> categoryProducts;
-	
+
 	// Product results
 	@FindBy(xpath = "//a//div")
 	List<WebElement> products;
@@ -31,21 +31,18 @@ public class SearchResultsPage_POM extends BasePage {
 		}
 		return null;
 	}
-		
-	
+
 	public List<WebElement> returnEachCategory() {
 		return categoryProducts;
 	}
-	
-	
+
 	public Boolean checkEachCategoryProducts() {
-		for(WebElement pr : products) {
-			if(pr.isDisplayed()) {
+		for (WebElement pr : products) {
+			if (pr.isDisplayed()) {
 				return true;
 			}
-			return false;
 		}
-		return null;
+		return false;
 	}
-	
+
 }

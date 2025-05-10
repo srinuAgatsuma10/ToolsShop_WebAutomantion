@@ -19,7 +19,7 @@ public class TC_05_FilteringProducts extends BaseClass {
 			cp.click();
 			Thread.sleep(3000);
 			if (resultStatus == true) {
-				spm.getProductNames();
+				System.out.println(spm.getProductNames());
 			} else {
 				System.out.println("No Products Found");
 			}
@@ -29,7 +29,6 @@ public class TC_05_FilteringProducts extends BaseClass {
 
 	// @Test(priority = 2)
 	public void searchByBrand() {
-
 	}
 
 }
