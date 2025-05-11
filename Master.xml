@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testCases.TC_04_SearchFunctinality"/>
+      <class name="testCases.TC_07_AddToCart"/>
+      <class name="testCases.TC_06_AddToFavourites"/>
+      <class name="testCases.TC_05_FilteringProducts"/>
+      <class name="testCases.TC_01_RegisterAccount"/>
+      <class name="testCases.TC_03_SignOutFromaApplication"/>
+      <class name="testCases.TC_02_SignInToApplication"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
