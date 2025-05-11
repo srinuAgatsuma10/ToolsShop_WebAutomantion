@@ -9,11 +9,11 @@ import pageObjects.ProductDisplayPage_POM;
 import pageObjects.SignInPage_POM;
 import testBase.BaseClass;
 
-public class TC_06_AddToFavourites extends BaseClass {
-
+public class TC_07_AddToCart extends BaseClass {
+	
 	/* In This testCase Login operation is optional.
 	 * (Note: The newly created account is active only for 30minutes)*/	
-	//@BeforeClass
+//	@BeforeClass
 	public void logIn() {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.clikcSignIn();
@@ -25,14 +25,15 @@ public class TC_06_AddToFavourites extends BaseClass {
 
 		hp.clickLogo();
 	}
-
+	
 	@Test
-	public void addToFavourites() {
+	public void addProductToCart() {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.selectOneProduct();
 
 		ProductDisplayPage_POM pdp = new ProductDisplayPage_POM(driver);
-		pdp.clickATFbtn();
-		Assert.assertTrue(pdp.successMessage());
+		pdp.clickAddCartBtn();
+		Assert.assertTrue(pdp.cartSuccessMessage());
 	}
+	
 }

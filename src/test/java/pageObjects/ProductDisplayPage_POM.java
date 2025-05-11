@@ -17,6 +17,14 @@ public class ProductDisplayPage_POM extends BasePage {
 	@FindBy(xpath = "//div[@aria-label='Unauthorized, can not add product to your favorite list.']")
 	WebElement successMsg;
 
+	@FindBy(xpath = "//button[@id='btn-add-to-cart']")
+	WebElement addToCart;
+
+	@FindBy(xpath = "//div[@aria-label='Product added to shopping cart.']")
+	WebElement cartMessage;
+
+	
+	
 	public void clickATFbtn() {
 		atfBtn.click();
 	}
@@ -28,4 +36,14 @@ public class ProductDisplayPage_POM extends BasePage {
 		return false;
 	}
 
+	public void clickAddCartBtn() {
+		addToCart.click();
+	}
+
+	public Boolean cartSuccessMessage() {
+		if (cartMessage.isDisplayed()) {
+			return true;
+		}
+		return false;
+	}
 }

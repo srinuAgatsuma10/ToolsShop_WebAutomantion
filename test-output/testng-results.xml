@@ -2,28 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-10T22:09:20 IST" name="Default suite" finished-at="2025-05-10T22:09:34 IST" duration-ms="13743">
+  <suite started-at="2025-05-11T19:58:38 IST" name="Default suite" finished-at="2025-05-11T19:58:57 IST" duration-ms="19138">
     <groups>
     </groups>
-    <test started-at="2025-05-10T22:09:20 IST" name="Default test" finished-at="2025-05-10T22:09:34 IST" duration-ms="13743">
-      <class name="testCases.TC_06_AddToFavourites">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_06_AddToFavourites@477b4cdf]" started-at="2025-05-10T22:09:20 IST" name="setUp" finished-at="2025-05-10T22:09:28 IST" duration-ms="7431" status="PASS">
+    <test started-at="2025-05-11T19:58:38 IST" name="Default test" finished-at="2025-05-11T19:58:57 IST" duration-ms="19138">
+      <class name="testCases.TC_07_AddToCart">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_07_AddToCart@22ff4249]" started-at="2025-05-11T19:58:38 IST" name="setUp" finished-at="2025-05-11T19:58:52 IST" duration-ms="14445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="logIn()[pri:0, instance:testCases.TC_06_AddToFavourites@477b4cdf]" started-at="2025-05-10T22:09:28 IST" name="logIn" finished-at="2025-05-10T22:09:29 IST" duration-ms="1400" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:testCases.TC_07_AddToCart@22ff4249]" started-at="2025-05-11T19:58:52 IST" name="addProductToCart" finished-at="2025-05-11T19:58:57 IST" duration-ms="4455" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method signature="addToFavourites()[pri:0, instance:testCases.TC_06_AddToFavourites@477b4cdf]" started-at="2025-05-10T22:09:29 IST" name="addToFavourites" finished-at="2025-05-10T22:09:33 IST" duration-ms="4220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToFavourites -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_06_AddToFavourites@477b4cdf]" started-at="2025-05-10T22:09:33 IST" name="tearDown" finished-at="2025-05-10T22:09:34 IST" duration-ms="622" status="PASS">
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_07_AddToCart@22ff4249]" started-at="2025-05-11T19:58:57 IST" name="tearDown" finished-at="2025-05-11T19:58:57 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_06_AddToFavourites -->
+      </class> <!-- testCases.TC_07_AddToCart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
