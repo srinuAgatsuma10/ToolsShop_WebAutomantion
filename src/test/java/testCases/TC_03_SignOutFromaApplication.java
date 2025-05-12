@@ -22,7 +22,7 @@ public class TC_03_SignOutFromaApplication extends BaseClass {
 		hp.clickLogo();
 	}
 
-	@Test
+	@Test(groups = {"Sanity","Functional","Master"})
 	public void signOutFromApplication() {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.clickAccountMenu();

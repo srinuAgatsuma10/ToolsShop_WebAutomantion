@@ -26,7 +26,7 @@ public class TC_07_AddToCart extends BaseClass {
 		hp.clickLogo();
 	}
 	
-	@Test
+	@Test(groups = {"Functional","Master"})
 	public void addProductToCart() {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.selectOneProduct();

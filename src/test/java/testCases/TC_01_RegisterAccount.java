@@ -12,7 +12,7 @@ import testBase.BaseClass;
 
 public class TC_01_RegisterAccount extends BaseClass {
 
-	@Test
+	@Test(groups = {"Sanity","Functional","Master"})
 	public void createNewAccount() {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.clikcSignIn();

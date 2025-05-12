@@ -26,7 +26,7 @@ public class TC_06_AddToFavourites extends BaseClass {
 		hp.clickLogo();
 	}
 
-	@Test
+	@Test(groups = {"Functional","Master"})
 	public void addToFavourites() {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.selectOneProduct();

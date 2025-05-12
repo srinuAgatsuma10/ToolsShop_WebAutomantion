@@ -10,7 +10,7 @@ import testBase.BaseClass;
 
 public class TC_02_SignInToApplication extends BaseClass {
 
-	@Test
+	@Test(groups = {"Sanity","Functional","Master"})
 	public void signIntoApplication() {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.clikcSignIn();

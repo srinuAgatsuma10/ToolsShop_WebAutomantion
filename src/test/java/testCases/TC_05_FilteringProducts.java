@@ -10,7 +10,7 @@ import testBase.BaseClass;
 
 public class TC_05_FilteringProducts extends BaseClass {
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = {"Functional","Master"})
 	public void searchByCategory() throws Exception {
 		SearchResultsPage_POM spm = new SearchResultsPage_POM(driver);
 		Boolean resultStatus = spm.checkEachCategoryProducts();
@@ -27,7 +27,7 @@ public class TC_05_FilteringProducts extends BaseClass {
 		}
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,groups = {"Functional","Master"})
 	public void searchByBrand() throws Exception {
 		SearchResultsPage_POM spm = new SearchResultsPage_POM(driver);
 		Boolean resultStatus = spm.checkEachCategoryProducts();

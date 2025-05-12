@@ -15,7 +15,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	public Properties prop; // to access config.properties file data
 
-	@BeforeClass
+	@BeforeClass(groups = {"Sanity","Functional","Master", "Data Driven"})
 	public void setUp() throws Exception {
 
 		// Access URL from Properties file
@@ -30,7 +30,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 	}
 
-	@AfterClass
+	@AfterClass(groups = {"Sanity","Functional","Master", "Data Driven"})
 	public void tearDown() {
 		driver.quit();
 	}

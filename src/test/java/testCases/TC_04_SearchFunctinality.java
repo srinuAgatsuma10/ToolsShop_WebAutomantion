@@ -9,7 +9,7 @@ import testBase.BaseClass;
 
 public class TC_04_SearchFunctinality extends BaseClass {
 
-	@Test
+	@Test(groups = {"Sanity","Functional","Master"})
 	public void searchProduct() {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.enterProductName(prop.getProperty("productName1"));

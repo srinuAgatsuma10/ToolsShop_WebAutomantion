@@ -2,6 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  
+  <groups>
+  	<run>
+  		<include name="Sanity"/>
+  		<!-- <include name="Functional"/>
+  		<include name="Data Driven"/>
+  		<include name="Master"/>	-->
+   	</run>
+  </groups>
+  
     <classes>
       <class name="testCases.TC_04_SearchFunctinality"/>
       <class name="testCases.TC_07_AddToCart"/>
