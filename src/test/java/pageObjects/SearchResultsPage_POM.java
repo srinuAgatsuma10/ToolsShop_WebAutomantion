@@ -13,7 +13,7 @@ public class SearchResultsPage_POM extends BasePage {
 	}
 
 	// Search result product names
-	@FindBy(xpath = "//a//div//h5")
+	@FindBy(xpath = "//a//div//h5[@data-test=\"product-name\"]")
 	List<WebElement> productNames;
 
 	// Search By Category

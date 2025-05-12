@@ -51,6 +51,13 @@ public class HomePagePOM extends BasePage {
 	@FindBy(xpath = "//img[@alt='Combination Pliers']")
 	WebElement product1;
 
+	@FindBy(xpath = "//a[@aria-label='Next']")
+	WebElement nextPage;
+
+	// Search result product names
+	@FindBy(xpath = "//a//div//h5[@data-test=\"product-name\"]")
+	List<WebElement> productNames;
+
 	
 	
 	
@@ -87,4 +94,17 @@ public class HomePagePOM extends BasePage {
 	public void selectOneProduct() {
 		product1.click();
 	}
+
+	public void clickNextBtn() {
+		nextPage.click();
+	}
+
+	public String getProductNames() {
+		for (WebElement pn : productNames) {
+			String proName = pn.getText();
+			return proName;
+		}
+		return null;
+	}
+	
 }
