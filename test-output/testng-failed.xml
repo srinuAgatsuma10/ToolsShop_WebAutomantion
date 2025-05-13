@@ -1,37 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="utilities.ExtentReportManager"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="Sanity"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_02_SignInToApplication">
+      <class name="testCases.TC_09_CheckOutFunctionality">
         <methods>
-          <include name="tearDown"/>
-          <include name="signIntoApplication"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- testCases.TC_02_SignInToApplication -->
-      <class name="testCases.TC_01_RegisterAccount">
-        <methods>
+          <include name="checkOutProduct"/>
+          <include name="SignIn"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="createNewAccount"/>
         </methods>
-      </class> <!-- testCases.TC_01_RegisterAccount -->
-      <class name="testCases.TC_03_SignOutFromaApplication">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="signOutFromApplication"/>
-        </methods>
-      </class> <!-- testCases.TC_03_SignOutFromaApplication -->
+      </class> <!-- testCases.TC_09_CheckOutFunctionality -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

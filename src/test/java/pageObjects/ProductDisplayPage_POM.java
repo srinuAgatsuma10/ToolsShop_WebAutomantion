@@ -22,7 +22,9 @@ public class ProductDisplayPage_POM extends BasePage {
 
 	@FindBy(xpath = "//div[@aria-label='Product added to shopping cart.']")
 	WebElement cartMessage;
-
+	//a[@aria-label='cart']
+	@FindBy(xpath = "//li[@class=\"nav-item\"]//a[@aria-label='cart']")
+	WebElement cartIcon;
 	
 	
 	public void clickATFbtn() {
@@ -45,5 +47,9 @@ public class ProductDisplayPage_POM extends BasePage {
 			return true;
 		}
 		return false;
+	}
+	
+	public void clickCartIcon() {
+		cartIcon.click();
 	}
 }
