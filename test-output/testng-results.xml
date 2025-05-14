@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-14T18:47:15 IST" name="Default suite" finished-at="2025-05-14T18:48:21 IST" duration-ms="65917">
+  <suite started-at="2025-05-14T18:52:39 IST" name="Suite" finished-at="2025-05-14T18:53:44 IST" duration-ms="65229">
     <groups>
       <group name="DataDriven">
-        <method signature="TC_10_Login_DDT.Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@22ff4249]" name="Login_DDT" class="testCases.TC_10_Login_DDT"/>
+        <method signature="TC_10_Login_DDT.Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@74e52ef6]" name="Login_DDT" class="testCases.TC_10_Login_DDT"/>
       </group> <!-- DataDriven -->
     </groups>
-    <test started-at="2025-05-14T18:47:15 IST" name="Default test" finished-at="2025-05-14T18:48:21 IST" duration-ms="65917">
+    <test started-at="2025-05-14T18:52:39 IST" name="Test" finished-at="2025-05-14T18:53:44 IST" duration-ms="65229">
       <class name="testCases.TC_10_Login_DDT">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_10_Login_DDT@22ff4249]" started-at="2025-05-14T18:47:15 IST" name="setUp" finished-at="2025-05-14T18:47:24 IST" duration-ms="8698" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_10_Login_DDT@74e52ef6]" started-at="2025-05-14T18:52:39 IST" name="setUp" finished-at="2025-05-14T18:52:47 IST" duration-ms="7679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@22ff4249]" started-at="2025-05-14T18:47:26 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:47:37 IST" duration-ms="11372" status="PASS">
+        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@74e52ef6]" started-at="2025-05-14T18:52:49 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:53:00 IST" duration-ms="11342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_DDT -->
-        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@22ff4249]" started-at="2025-05-14T18:47:37 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:47:48 IST" duration-ms="10788" status="PASS">
+        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@74e52ef6]" started-at="2025-05-14T18:53:00 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:53:11 IST" duration-ms="10805" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_DDT -->
-        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@22ff4249]" started-at="2025-05-14T18:47:48 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:47:59 IST" duration-ms="10741" status="PASS">
+        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@74e52ef6]" started-at="2025-05-14T18:53:11 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:53:22 IST" duration-ms="10780" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_DDT -->
-        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@22ff4249]" started-at="2025-05-14T18:47:59 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:48:10 IST" duration-ms="10659" status="PASS">
+        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@74e52ef6]" started-at="2025-05-14T18:53:22 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:53:33 IST" duration-ms="10693" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,7 +98,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_DDT -->
-        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@22ff4249]" started-at="2025-05-14T18:48:10 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:48:20 IST" duration-ms="10646" status="PASS">
+        <test-method signature="Login_DDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_10_Login_DDT@74e52ef6]" started-at="2025-05-14T18:53:33 IST" name="Login_DDT" data-provider="LogInData" finished-at="2025-05-14T18:53:43 IST" duration-ms="10694" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,11 +119,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_DDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_10_Login_DDT@22ff4249]" started-at="2025-05-14T18:48:20 IST" name="tearDown" finished-at="2025-05-14T18:48:21 IST" duration-ms="541" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_10_Login_DDT@74e52ef6]" started-at="2025-05-14T18:53:43 IST" name="tearDown" finished-at="2025-05-14T18:53:44 IST" duration-ms="542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_10_Login_DDT -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
