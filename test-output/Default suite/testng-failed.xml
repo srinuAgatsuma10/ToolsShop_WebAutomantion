@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_09_CheckOutFunctionality">
+      <class name="testCases.TC_10_Login_DDT">
         <methods>
-          <include name="checkOutProduct"/>
-          <include name="SignIn"/>
+          <include name="Login_DDT"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testCases.TC_09_CheckOutFunctionality -->
+      </class> <!-- testCases.TC_10_Login_DDT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
