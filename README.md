@@ -25,6 +25,7 @@ It follows a **Modular Page Object Model (POM)** structure integrated with **Tes
 
 ---
 
+
 ## 🗂️ Framework Structure
 
 ```
@@ -61,6 +62,8 @@ The following functionalities of the website are automated and validated:
 ---
 
 ## 🚀 How to Run the Tests
+
+![How to Run Tests](https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif)
 
 1. **Clone the Repository**
    ```bash
