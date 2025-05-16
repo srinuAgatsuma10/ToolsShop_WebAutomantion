@@ -9,6 +9,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +22,7 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public Properties prop; // to access config.properties file data
+	public Logger logger;
 
 	@BeforeClass(groups = { "Sanity", "Functional", "Master", "DataDriven" })
 	public void setUp() throws Exception {
@@ -29,6 +32,8 @@ public class BaseClass {
 		prop = new Properties();
 		prop.load(file);
 
+		logger = LogManager.getLogger(this.getClass());
+		
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

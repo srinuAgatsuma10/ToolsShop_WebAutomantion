@@ -14,9 +14,12 @@ public class TC_01_RegisterAccount extends BaseClass {
 
 	@Test(groups = {"Sanity","Functional","Master"})
 	public void createNewAccount() {
+		logger.info("Starting TC_01_RegisterAccount");
+		logger.info("Click on SignIn button.");
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.clikcSignIn();
 
+		logger.info("Click on Register new Account Link.");
 		SignInPage_POM sp = new SignInPage_POM(driver);
 		sp.clickRegister();
 
@@ -29,6 +32,7 @@ public class TC_01_RegisterAccount extends BaseClass {
 		String state = faker.address().state();
 		String email = faker.internet().emailAddress();
 
+		logger.info("Enter Form Details.");
 		RegisterAccountPOM rap = new RegisterAccountPOM(driver);
 		rap.enterFirstLastNames(fname, lname);
 		rap.enterDOB("12-02-2000");
@@ -39,5 +43,6 @@ public class TC_01_RegisterAccount extends BaseClass {
 		rap.clickRegisterButton();
 
 		Assert.assertEquals(driver.getCurrentUrl(), prop.getProperty("url") + "auth/login");
+		logger.info("Finish TC_01_RegisterAccount");
 	}
 }
