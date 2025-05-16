@@ -5,11 +5,6 @@
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="Sanity"/>
-      </run>
-    </groups>
     <classes>
       <class name="testCases.TC_02_SignInToApplication">
         <methods>
@@ -27,11 +22,34 @@
       </class> <!-- testCases.TC_01_RegisterAccount -->
       <class name="testCases.TC_03_SignOutFromaApplication">
         <methods>
+          <include name="SignIn"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="signOutFromApplication"/>
         </methods>
       </class> <!-- testCases.TC_03_SignOutFromaApplication -->
+      <class name="testCases.TC_06_AddToFavourites">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="addToFavourites"/>
+        </methods>
+      </class> <!-- testCases.TC_06_AddToFavourites -->
+      <class name="testCases.TC_09_CheckOutFunctionality">
+        <methods>
+          <include name="checkOutProduct"/>
+          <include name="SignIn"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC_09_CheckOutFunctionality -->
+      <class name="testCases.TC_07_AddToCart">
+        <methods>
+          <include name="tearDown"/>
+          <include name="addProductToCart"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC_07_AddToCart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

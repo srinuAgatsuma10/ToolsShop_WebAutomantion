@@ -1,0 +1,16 @@
+13:27:48.454 [main] INFO  - Starting TC_04_SearchFunctinality
+13:27:48.459 [main] INFO  - Search Any existing product in the search Bar and click on Search button.
+13:27:48.774 [main] INFO  - Get Names of the search results.
+13:27:48.844 [main] INFO  - Finishing TC_04_SearchFunctinality
+13:29:55.715 [main] INFO  - Starting TC_03_SignOutFromaApplication
+13:29:55.716 [main] INFO  - Click on SigIn Button.
+13:29:55.891 [main] INFO  - Enter Valid credentials.
+13:29:56.643 [main] INFO  - Return to Home page.
+13:29:57.030 [main] INFO  - Click on MyAccount DopDown and Click on SignOut.
+13:30:23.434 [main] INFO  - Starting TC_01_RegisterAccount
+13:30:23.435 [main] INFO  - Click on SignIn button.
+13:30:23.612 [main] INFO  - Click on Register new Account Link.
+13:30:24.426 [main] INFO  - Enter Form Details.
+13:31:34.490 [main] INFO  - Starting TC_02_SignInToApplication
+13:31:34.490 [main] INFO  - Click on SigIn Button.
+13:31:34.696 [main] INFO  - Enter Valid credentials.
