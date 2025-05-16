@@ -63,7 +63,12 @@ The following functionalities of the website are automated and validated:
 
 ## 🚀 How to Run the Tests
 
-![How to Run Tests](https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif)
+<table>
+  <tr>
+    <td width="40%">
+      <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" alt="Test Execution" width="100%">
+    </td>
+    <td>
 
 1. **Clone the Repository**
    ```bash
@@ -82,6 +87,10 @@ The following functionalities of the website are automated and validated:
 
 4. **View Results**  
    TestNG will generate console logs and default reports. You can optionally integrate ExtentReports for enhanced HTML output.
+
+    </td>
+  </tr>
+</table>
 
 ---
 
